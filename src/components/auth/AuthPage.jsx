@@ -66,7 +66,7 @@ function AuthPage({ onAuthSuccess }) {
     setIsLoading(true)
 
     try {
-      const apiBase = import.meta.env.VITE_API_URL || ''
+      const apiBase = import.meta.env.VITE_API_URL || 'https://expense-tracker-be-3-zayd.onrender.com'
       const endpoint =
         activeTab === 'login'
           ? `${apiBase}/api/auth/login`
